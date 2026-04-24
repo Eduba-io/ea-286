@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A read on where AI fits inside SOFWERX's assessment pipeline | Eduba for SOFWERX</title>
+<meta name="description" content="Hardware Enabled AI Acceleration ran Phase 3 in January, and SOFWERX moves commercial agreements in under 30 days. A hypothesis about where assessment eats hours." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div data-eduba="banner" style="background:#0a0a0a;color:#f5f5f5;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;border-bottom:1px solid #1f1f1f;position:relative;z-index:1000;">
+  <a href="https://eduba.io" target="_blank" rel="noopener" style="color:#f5f5f5;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:-0.02em;line-height:1;">eduba</a>
+  <span style="opacity:0.88;">Prepared by Eduba for Sofwerx &mdash; Emerge Americas 2026</span>
+</div>
+
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-logo">
+      <img src="logo.png" alt="SOFWERX" />
+    </div>
+    <div class="topbar-meta">
+      eMerge Americas 2026<span class="pipe">|</span>Booth 464
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-kicker">Prepared for SOFWERX</span>
+      <h1 class="hero-title">A read on where AI fits inside SOFWERX's assessment pipeline, and where it does not.</h1>
+    </div>
+    <p class="hero-subline">Peer brief from Eduba. Written for the engagement lead running assessment operations, not for procurement.</p>
+  </div>
+</section>
+
+<section class="metrics" aria-label="SOFWERX public impact metrics">
+  <div class="metrics-inner">
+    <div class="metric">
+      <div class="metric-value">$460M</div>
+      <div class="metric-label">Contracted since 2015</div>
+    </div>
+    <div class="metric">
+      <div class="metric-value">46%</div>
+      <div class="metric-label">Prototype to Phase 3 transition</div>
+    </div>
+    <div class="metric">
+      <div class="metric-value">Under 30 days</div>
+      <div class="metric-label">Commercial agreement cycle</div>
+    </div>
+  </div>
+</section>
+
+<main class="body-wrap">
+  <article class="prose">
+    <h2>The read</h2>
+
+    <p>SOFWERX has moved $460 million through 1,629 purchase orders and B2B agreements since 2015. The 46% prototype-to-Phase-3 transition rate sits well above the DoD baseline, and the 30-day commercial agreement cycle is the kind of throughput that the rest of the acquisition community is still trying to reproduce. Matt Creamer, Eduba's CRO, walked the SOFWERX floor at eMerge Americas because the number above the numbers is the one that matters: the 54% of prototypes that do not transition. That is where a methodology conversation starts.</p>
+
+    <p>Eduba's operating thesis is a 60/30/10 split. About 60% of the work in a document-heavy synthesis pipeline is traditional code and database work. About 30% is rule-based logic. About 10% is a genuine AI problem. Teams that skip this distinction put LLMs where Postgres would do the job faster, cheaper, and with better audit guarantees. Applied to SOFWERX, the RFI triage and transition-tracking workflows are primarily a structured-data and rules problem, with a narrow AI layer on top for synthesis. The design question is which piece of each workflow belongs on which layer. That is the conversation Matt walked up with.</p>
+
+    <h3>Closest precedent in Eduba's practice</h3>
+
+    <p>The closest precedent inside Eduba's practice is VigilOre, a multi-agent compliance platform for DRC mining operations. Dense document synthesis, regulated environment, long hours of manual review. Eduba's delivery collapsed 160+ hours of compliance work to under 5 minutes per cycle. The engagement is a scoped sprint followed by a long-term methodology-transfer relationship. The shape of the work maps onto SOFWERX's assessment-event triage and transition-pipeline tracking almost directly, allowing for the obvious differences in domain and governance.</p>
+
+    <h3>The methodology underneath</h3>
+
+    <p>The methodology underneath the delivery is the Interpretable Context Methodology, submitted to ACM TiiS and open-sourced on MIT license. ICM organizes agent context as a layered filesystem so that the behavior of an agentic workflow is inspectable the same way a well-run SOP is inspectable. For a nonprofit operating under PIA authority and reporting up to USSOCOM, that auditability is load-bearing, not a marketing feature. Repo: <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>.</p>
+
+    <p>For governance-heavy reviews, Eduba also maintains the Ethics Engine, a psychometric assessment tool for evaluating ideological and moral patterns in LLMs. Paper: <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a>. Repo: <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>.</p>
+
+    <h3>Who is behind this</h3>
+
+    <p>Jake Van Clief, Eduba's founder, is a Marine Corps veteran with eight years in cryptographic systems, F-35 and F-18 avionics, and the Joint Helmet Mounted Cueing System, with direct relationships with Pentagon program managers, an MSc in Future Governance from Edinburgh, and published work in ACM TiiS and on arXiv. Eduba has trained 1,500+ people across enterprise engagements since May 2025, including cohorts at Pacific Life, Colgate-Palmolive, and KPMG UK (one of the Big Four). Eduba also partners with NLP Logix for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists.</p>
+
+    <div class="ask">
+      <div class="label">Next step</div>
+      <p>30 minutes with Matt. Bring one assessment workflow that eats too many hours. We will do a live read on which parts sit on the AI layer, which parts do not, and what a scoped pilot would look like.</p>
+      <a class="cta-btn" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book 30 minutes with Matt</a>
+    </div>
+  </article>
+
+  <aside class="sidebar" aria-label="Contact and context">
+    <div class="cta-card">
+      <div class="label">Point of contact</div>
+      <h3>Matt Creamer</h3>
+      <div class="role">Chief Revenue Officer, Eduba</div>
+      <p>At booth 464 on April 23 and 24. Calendar is open for the week after eMerge.</p>
+      <a class="cta-btn" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Schedule a 30-minute call</a>
+    </div>
+
+    <div class="info-card">
+      <h4>Reference stack</h4>
+      <ul>
+        <li><strong>Matching case</strong>VigilOre: 160+ hours of compliance work to under 5 minutes per cycle.</li>
+        <li><strong>Matching paper</strong>ICM, submitted to ACM TiiS. MIT-licensed repo.</li>
+        <li><strong>Training scale</strong>1,500+ learners since May 2025. 95% 30-day adoption.</li>
+        <li><strong>Partner below the layer</strong>NLP Logix. In machine learning since 2011. Over 150 data scientists.</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h4>Vendor registration</h4>
+      <ul>
+        <li><strong>SAM UEI</strong>Y77RULHKK9Q1</li>
+        <li><strong>Veteran-owned</strong>Certification in progress</li>
+        <li><strong>Primary NAICS</strong>541611 Management Consulting</li>
+      </ul>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>Prepared by Eduba: <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a> &middot; <a href="https://eduba.io/works" target="_blank" rel="noopener">More case studies</a></div>
+    <div>For SOFWERX. eMerge Americas 2026, Booth 464.</div>
+  </div>
+</footer>
+
+<footer data-eduba="footer" style="background:#0a0a0a;color:#dcdcdc;padding:36px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.6;border-top:1px solid #1f1f1f;margin-top:48px;">
+  <div style="max-width:1040px;margin:0 auto;">
+    <div style="display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:flex-start;">
+      <div style="min-width:240px;flex:1;">
+        <div style="margin-bottom:6px;"><a href="https://eduba.io" target="_blank" rel="noopener" style="color:#ffffff;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-0.02em;">eduba</a></div>
+        <div style="opacity:0.85;margin-bottom:4px;">Van Clief Media LLC, dba Eduba</div>
+        <div style="opacity:0.7;">Veteran-owned AI consulting and training firm</div>
+      </div>
+      <div style="min-width:220px;flex:1;">
+        <div style="color:#ffffff;font-weight:600;margin-bottom:2px;">Matt Creamer, CRO</div>
+        <div style="margin-bottom:10px;"><a href="mailto:thecro@eduba.io" style="color:#dcdcdc;text-decoration:underline;">thecro@eduba.io</a></div>
+        <div style="opacity:0.85;">Founder: Jake Van Clief</div>
+      </div>
+      <div style="min-width:180px;flex:1;">
+        <div style="margin-bottom:4px;"><a href="https://eduba.io" target="_blank" rel="noopener" style="color:#dcdcdc;text-decoration:underline;">eduba.io</a></div>
+        <div style="opacity:0.85;">Palm Coast, FL</div>
+      </div>
+    </div>
+    <div style="margin-top:24px;padding-top:16px;border-top:1px solid #1f1f1f;opacity:0.62;font-size:12px;line-height:1.55;">
+      This site was custom-built by Eduba as a conference pitch. It is not affiliated with or operated by Sofwerx.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
